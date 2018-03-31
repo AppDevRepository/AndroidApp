@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Personal Activity Scoring System</string>
-    <string name="title_activity_maps">Map</string>
+    <plurals name="pushes_seconds">
+        <item quantity="one">Push every second</item>
+        <item quantity="other">Push every %d seconds</item>
+    </plurals>
+    <plurals name="pushes_minutes">
+        <item quantity="one">Push every minute</item>
+        <item quantity="other">Push every %d minutes</item>
+    </plurals>
+
+    <string name="dialogFragment_title">Choose the interval</string>
+    <string-array name="dialogFragment_pushTimes">
+        <item>1 sec</item>
+        <item>10 sec</item>
+        <item>30 sec</item>
+        <item>1 min</item>
+    </string-array>
+
 </resources>
