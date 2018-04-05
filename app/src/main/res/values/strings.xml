@@ -16,5 +16,7 @@
         <item>30 sec</item>
         <item>1 min</item>
     </string-array>
-
+    <string name="default_notification_channel_id">default</string>
+    <!-- Strings for the Notifications -->
+    <string name="notification_title">Personal Activity Scoring System running…</string>
 </resources>
