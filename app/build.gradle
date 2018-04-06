@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'PASS-APK-Key'
+            keyPassword 'pass2018'
+            storeFile file('/Users/amanto04/Desktop/PASS-APK')
+            storePassword 'passapk2018'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "pass.threestech.com.personalactivityscoringsystem"
@@ -14,12 +22,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.google.android.gms:play-services-maps:11.8.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
