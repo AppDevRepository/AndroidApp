@@ -38,10 +38,19 @@
             android:name="pass.threestech.com.services.PollLocationService"
             android:enabled="true" >
         </service>
+        <receiver android:name="pass.threestech.com.services.PollAlarmReceiver">
+            <intent-filter>
+                <action android:name="pass.threestech.com.services.ACTION_PUSH_LOCATION_ALARM" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name=".GPSLocationActivity"
-            android:label="GPSLocationActivity" >
+            android:label="GPS Location" >
+        </activity>
+        <activity
+            android:name=".ViewLocationUpdatesActivity"
+            android:label="View Location Updates" >
         </activity>
     </application>
 
