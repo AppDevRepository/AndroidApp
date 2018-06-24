@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="pass.threestech.com.personalactivityscoringsystem.GPSLocationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_paper_plane" />
+
+    <TextView
+        android:id="@+id/CurrentLocation_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/poll_interval_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:focusable="false"
+        android:text="Set Poll Interval"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/Stop_LocationUpdates_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="Start Location Updates"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/View_LocationUpdates_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="View Location Updates"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
