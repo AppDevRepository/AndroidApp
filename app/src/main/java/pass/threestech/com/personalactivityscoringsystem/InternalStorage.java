@@ -38,4 +38,11 @@ public final class InternalStorage{
             file.delete();
         }
     }
+    public static File getFile(Context context, String key) throws IOException,
+            ClassNotFoundException {
+        String path = context.getFilesDir().getAbsolutePath()+"/"+key;
+        File file = new File(path);
+        return file;
+    }
+
 }
